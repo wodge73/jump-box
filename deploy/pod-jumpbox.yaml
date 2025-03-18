@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  creationTimestamp: null
+  labels:
+    run: jump-box
+  name: jump-box
+spec:
+  containers:
+  - image: nginx
+    name: jump-box
+    resources: {}
+    ports:
+      - containerPort: 80
+        name: "http-server"
+  dnsPolicy: ClusterFirst
+  restartPolicy: Always

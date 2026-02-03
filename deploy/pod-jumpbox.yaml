@@ -3,6 +3,7 @@ kind: Pod
 metadata:
   creationTimestamp: null
   labels:
+    app.kubernetes.io/instance: jump-box
     run: jump-box
   name: jump-box
 spec:
